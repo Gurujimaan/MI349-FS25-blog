@@ -4,39 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Contact</title>
-      <style>
-        nav{
-            background-color: #333333;
-        }
 
-        ul {
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            overflow:hidden;
-        }
-
-        ul li {
-            float: left;
-            padding-right: 20px;
-            margin-left: 20px;
-        }
-
-        ul li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul li a:hover{
-            background-color: #316fdb;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -54,18 +25,18 @@
     <main>
         <article>
         <header>
-            <h2>How to Contact me</h2>
+            <h2 id="contacth2">How to Contact me</h2>
         </header>
-        <form name="contact" netlify>
-            <p>
+        <form name="contact" netlify class="myForm">
+            <p id="name">
                 Name: <input type="text" name="name">
             </p>
 
-            <p>
+            <p id="email">
                 Email: <input type="email" name="email">
             </p>
 
-            <p>
+            <p id="reason">
                 Reason for contacting me:
                 <select name="reason">
                     <option>Meet up</option>
@@ -74,7 +45,7 @@
                 </select>
             </p>
 
-            <p>
+            <p id="message">
                 Message:<br>
                 <textarea name="message" rows="5" cols="30"></textarea>
             </p>
