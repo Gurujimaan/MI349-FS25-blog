@@ -74,7 +74,7 @@ ul li a:hover{
 }
 
 ol {
-    padding-left: 280px;             
+    padding-left: 20px;             
     margin: 10px;              
 }
 
@@ -239,4 +239,81 @@ button {
 
 button:hover {
     background-color: #4f36ab;
+}
+
+
+@media (min-width: 768px) {
+
+    .Devlog,
+    .Portal {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    p, li {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    ul li {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        float: none;
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-shadow: 2px 2px 1px #4f36ab;
+    }
+
+    h2, h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .myForm {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .Devlog table {
+        display: block;
+        overflow-x: auto;
+        font-size: 14px;
+    }
 }
